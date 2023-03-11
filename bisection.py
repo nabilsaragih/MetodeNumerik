@@ -8,7 +8,6 @@ def bisection(a, b, error):
     while True:
         c = (a + b) / 2
 
-        fa = f(a)
         fb = f(b)
         fc = f(c)
         tempFx = fb * fc
