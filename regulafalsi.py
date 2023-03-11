@@ -1,6 +1,5 @@
 def f(x):
-    persamaan = '(x ** 3 + x + 1) / (x ** 4 + 1)'
-    return eval(persamaan)
+    return (x ** 3 + x + 1) / (x ** 4 + 1)
 
 def regulafalsi(a, b, error):
     iterCount = 1
