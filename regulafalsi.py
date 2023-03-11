@@ -27,7 +27,6 @@ def regulafalsi(a, b, error):
 
     print(f"Akar dari persamaan adalah {format(c, '.5f')}")
 
-
 a = float(input("Masukkan a: "))
 b = float(input("Masukkan b: "))
 e = float(input("Masukkan error: "))
