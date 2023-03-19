@@ -15,8 +15,8 @@ def riemann(a, b, N):
 
     print(f"Luas: {format(L, '.3f')}")
 
-a = float(input("Masukkan batas atas: "))
-b = float(input("Masukkan batas bawah: "))
+a = float(input("Masukkan batas bawah: "))
+b = float(input("Masukkan batas atas: "))
 N = int(input("Masukkan jumlah pembagi area: "))
 
 riemann(a, b, N)
