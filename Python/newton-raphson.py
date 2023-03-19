@@ -26,4 +26,5 @@ def newtonRaphson(a, e):
 
 a = float(input("Masukkan a: "))
 e = float(input("Masukkan e: "))
+
 newtonRaphson(a, e)

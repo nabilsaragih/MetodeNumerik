@@ -18,4 +18,5 @@ def riemann(a, b, N):
 a = float(input("Masukkan batas atas: "))
 b = float(input("Masukkan batas bawah: "))
 N = int(input("Masukkan jumlah pembagi area: "))
+
 riemann(a, b, N)
