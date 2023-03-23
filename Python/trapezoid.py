@@ -1,5 +1,5 @@
 def f(x):
-    return (x ** 3 + x + 1) / (x ** 4 + 1)
+    return x ** 2 + 7 * x + 5
 
 def trapezoid(a, b, N):
     h = (b - a) / N

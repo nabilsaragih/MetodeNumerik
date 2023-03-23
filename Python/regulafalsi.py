@@ -1,5 +1,8 @@
+import equationRegex
+
 def f(x):
-    return (x ** 3 + x + 1) / (x ** 4 + 1)
+    # (x ** 3 + x + 1) / (x ** 4 + 1)
+    return eval(equationRegex.parse(persamaan))
 
 def regulafalsi(a, b, error):
     iterCount = 1
@@ -27,6 +30,7 @@ def regulafalsi(a, b, error):
 
     print(f"Akar dari persamaan adalah {format(c, '.5f')}")
 
+persamaan = input("Masukkan persamaan, misal (x^2 + 3x - 1): ")
 
 a = float(input("Masukkan a: "))
 b = float(input("Masukkan b: "))

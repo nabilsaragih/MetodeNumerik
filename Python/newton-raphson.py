@@ -1,8 +1,12 @@
+import equationRegex
+import sympy as sp
+
 def f(x):
-    return (x ** 3 + x + 1) / (x ** 4 + 1)
+    # (x ** 3 + x + 1) / (x ** 4 + 1)
+    return eval(equationRegex.parse(persamaan))
 
 def Df(x):
-    return ((-1 * x) ** 6 + (-3 * x) ** 4 + (-4 * x) ** 3 + (3 * x) ** 2 + 1) / (x ** 4 + 1) ** 2
+    return eval(str(sp.diff(equationRegex.parse(persamaan))))
 
 def newtonRaphson(a, e):
     iterCount = 1
@@ -23,6 +27,8 @@ def newtonRaphson(a, e):
         iterCount += 1
     
     print(f"Akar dari persamaan adalah {format(b, '.5f')}")
+
+persamaan = input("Masukkan persamaan, misal (x^2 + 3x - 1): ")
 
 a = float(input("Masukkan a: "))
 e = float(input("Masukkan e: "))

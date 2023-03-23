@@ -1,5 +1,8 @@
+import equationRegex
+
 def f(x):
-    return (x ** 3 + x + 1) / (x ** 4 + 1)
+    # x ** 2 + 7 * x + 5
+    return eval(equationRegex.parse(persamaan))
 
 def secant(x0, x1, e):
     iterCount = 1
@@ -21,6 +24,8 @@ def secant(x0, x1, e):
         iterCount += 1
 
     print(f"Akar dari persamaan adalah {format(x1, '.5f')}")
+
+persamaan = input("Masukkan persamaan, misal (x^2 + 3x - 1): ")
 
 x0 = float(input("Masukkan nilai x0: "))
 x1 = float(input("Masukkan nilai x1: "))
