@@ -1,19 +1,19 @@
 def f(x):
-    return x ** 2 + 7 * x + 5
+    return x * (4 * x + 1) ** 0.5
 
 def trapezoid(a, b, N):
     h = (b - a) / N
 
-    xCurr = h
+    xCurr = 0
     FxCount = 0
 
-    for i in range(N-1):
+    for i in range(N):
         FxCount += f(xCurr)
         xCurr += h
 
-    L = (h / 2) * ((2 * FxCount) + b)
+    L = (h / 2) * (f(a) + (2 * FxCount) + f(b))
 
-    print(f"Luas: {format(L, '.3f')}")
+    print(f"Luas: {format(L, '.5f')}")
 
 a = float(input("Masukkan batas bawah: "))
 b = float(input("Masukkan batas atas: "))

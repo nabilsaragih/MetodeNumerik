@@ -1,5 +1,5 @@
 def f(x):
-    return (x ** 3 + x + 1) / (x ** 4 + 1)
+    return x * (4 * x + 1) ** 0.5
 
 def riemann(a, b, N):
     h = (b - a) / N
@@ -13,7 +13,7 @@ def riemann(a, b, N):
 
     L = h * FxCount
 
-    print(f"Luas: {format(L, '.3f')}")
+    print(f"Luas: {format(L, '.5f')}")
 
 a = float(input("Masukkan batas bawah: "))
 b = float(input("Masukkan batas atas: "))
